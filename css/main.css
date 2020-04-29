@@ -149,7 +149,7 @@ header nav ul {
 }
 
 footer {
-  width: 55%; 
+  width: 55%;
 }
 
 footer .social-icons {
@@ -253,6 +253,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  padding: 46px 0;
 }
 
 .contact-section {
@@ -260,6 +262,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 45px 0;
 }
 
 /* ==========================================================================
@@ -271,6 +274,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  padding: 42px 0; 
 }
 
 .faq .content-wrapper {
