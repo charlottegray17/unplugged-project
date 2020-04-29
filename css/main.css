@@ -100,13 +100,25 @@ textarea {
 
 /* ---------- Base Header - Footer Styles----------------*/
 
+
 header,
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
 
+.content-wrapper {
+  width: 80%;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header h1 {
+  padding: 50px 0;
 }
 
 header .content-wrapper {
@@ -114,6 +126,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
 }
 
 header nav {
@@ -121,11 +138,18 @@ header nav {
   justify-content: space-around;
   align-content: center;
   flex-flow: row wrap;
+  width: 60%;
+  padding-top: 15px;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 60%;
+}
+
+footer {
+  width: 55%; 
 }
 
 footer .social-icons {
@@ -140,6 +164,15 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -151,6 +184,14 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
+/* Form Descriptor */
+
+.form {
+  padding: 27px 0;
+}
+
+/* Form */
+
 /* Aside */
 
 aside {
@@ -158,6 +199,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 28px 0;
 }
 
 /* Features */
@@ -166,6 +208,11 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 47px 0;
+}
+
+.features article {
+  width: 45%;
 }
 
 .features .features-items {
@@ -175,12 +222,26 @@ aside {
   flex-flow: row wrap;
 }
 
+.features .features-item-description {
+  padding: 38px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
 /* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 90%;
+  padding: 50px 0;
+}
+
+.reviews h3 {
+  width: 80%;
 }
 
 /* ==========================================================================
