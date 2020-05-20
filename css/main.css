@@ -275,7 +275,7 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   width: 90%;
-  padding: 42px 0; 
+  padding: 42px 0;
 }
 
 .faq .content-wrapper {
@@ -375,16 +375,271 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* TABLET STYLES HERE */
+
+/* Header and Footer Base Styles*/
+
+header .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header img {
+  display: flex;
+  justify-content: flex-start;
 }
+
+.header-divider {
+  width: 50%;
+  margin: 0;
+}
+
+.header-divider nav {
+  width: 100%;
+  flex-flow: row;
+  margin: 0;
+}
+
+header nav ul {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  margin: 92px 0;
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 80%;
+  display: flex;
+}
+
+footer .footer-content {
+  flex-basis: 100%;
+  display: flex;
+}
+
+footer .contact {
+}
+
+footer p {
+}
+
+address {
+  border: 2px solid black;
+  flex-basis: 50%;
+}
+
+.social {
+  border: 2px solid black;
+  flex-basis: 50%;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* -------------------- Tablet Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+/* Aside */
+
+aside .content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form Descriptor */
+
+
+.form-description {
+  border: 2px solid black;
+  flex-basis: 45%;
+}
+
+/* Form */
+
+.form {
+  border: 2px solid black;
+  flex-basis: 45%;
+}
+
+input {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+
+/* Features */
+
+.features, .features .content-wrapper {
+  width: 100%;
+}
+
+.features h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.features article {
+  border: 2px solid black;
+  flex-basis: 45%;
+  display: flex;
+  text-align: center;
+}
+
+.features p {
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reviews .content-wrapper {
+  width: 90%;
+}
+
+.reviews article {
+  display: flex;
+  border: 2px solid black;
+}
+
+.reviews .image {
+  border: 2px solid black;
+  flex-basis: 50%;
+}
+
+.reviews .article-content {
+  border: 2px solid black;
+  flex-basis: 50%;
+
+}
+
+.reviews h3 {
+  width: 80%;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+.mission {
+  width: 100%;
+}
+
+.mission-content {
+  display: flex;
+}
+
+.mission-header {
+  border: 2px solid black;
+  width: inherit;
+}
+
+.mission p {
+  border: 2px solid black;
+}
+
+/*contact section for tablet*/
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content {
+  border: 2px solid black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.address,
+.facilitator-details {
+  border: 2px solid black;
+  flex-basis: 50%;
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq {
+  width: 100%;
+  display: flex;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-entries h3 {
+  border: 2px solid black;
+  width: 45%;
+}
+
+.faq-entries p {
+  border: 2px solid black;
+  width: 45%;
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* TABLET STYLES HERE */
+}
+
 
 /* ==========================================================================
    Print styles.
