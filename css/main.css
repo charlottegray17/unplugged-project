@@ -44,7 +44,7 @@ html {
 hr {
   display: block;
   height: 1px;
-  border: 0;
+  0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
@@ -70,7 +70,7 @@ video {
  */
 
 fieldset {
-  border: 0;
+  0;
   margin: 0;
   padding: 0;
 }
@@ -101,6 +101,32 @@ textarea {
 
 /*------------------GLOBAL STYLES------------*/
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 html {
    font-size: 16px;
 
@@ -109,6 +135,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  background-color: black;
+  color: white;
 }
 
 ul,
@@ -154,6 +182,22 @@ figure {
 address {
   font-style: normal;
 
+}
+
+header {
+  background-color: #202322;
+}
+
+aside {
+  background-color: #527158;
+}
+
+.reviews {
+  background-color: #2a423a;
+}
+
+footer {
+  background-color: #202322;
 }
 
 .content-wrapping {
@@ -247,11 +291,15 @@ footer p {
 
 /* Form Descriptor */
 
-.form {
-  padding: 27px 0;
+/* Form */
+
+aside h3 {
+  margin: 0;
 }
 
-/* Form */
+aside .form {
+  margin: 0;
+}
 
 /* Aside */
 
@@ -260,7 +308,17 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 28px 0;
+  padding: 50px 0;
+}
+
+aside .form-description {
+  width: 283px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+aside p {
+  width: 283px;
 }
 
 /* Features */
@@ -284,7 +342,7 @@ aside {
 }
 
 .features .features-item-description {
-  padding: 38px 0;
+  padding: 38px 45px;
 }
 
 .features p {
@@ -369,7 +427,7 @@ aside {
 */
 
 .sr-only {
-  border: 0;
+  0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
@@ -471,7 +529,6 @@ header nav ul {
 footer {
   width: 100%;
   display: flex;
-  margin: 92px 0;
   text-align: center;
 }
 
@@ -492,12 +549,12 @@ footer p {
 }
 
 address {
-  border: 2px solid black;
+
   flex-basis: 50%;
 }
 
 .social {
-  border: 2px solid black;
+
   flex-basis: 50%;
 }
 
@@ -544,14 +601,12 @@ aside .content-wrapper {
 
 
 .form-description {
-  border: 2px solid black;
   flex-basis: 45%;
 }
 
 /* Form */
 
 .form {
-  border: 2px solid black;
   flex-basis: 45%;
 }
 
@@ -570,6 +625,10 @@ input {
   width: 100%;
 }
 
+.features .content-wrapper {
+  width: 75%;
+}
+
 .features h2 {
   display: flex;
   justify-content: center;
@@ -582,7 +641,7 @@ input {
 }
 
 .features article {
-  border: 2px solid black;
+
   flex-basis: 45%;
   display: flex;
   text-align: center;
@@ -606,16 +665,16 @@ input {
 
 .reviews article {
   display: flex;
-  border: 2px solid black;
+
 }
 
 .reviews .image {
-  border: 2px solid black;
+
   flex-basis: 50%;
 }
 
 .reviews .article-content {
-  border: 2px solid black;
+
   flex-basis: 50%;
 
 }
@@ -637,12 +696,12 @@ input {
 }
 
 .mission-header {
-  border: 2px solid black;
+
   width: inherit;
 }
 
 .mission p {
-  border: 2px solid black;
+
 }
 
 /*contact section for tablet*/
@@ -656,7 +715,7 @@ input {
 }
 
 .contact-content {
-  border: 2px solid black;
+
   display: flex;
   align-content: center;
   justify-content: center;
@@ -664,7 +723,7 @@ input {
 
 .address,
 .facilitator-details {
-  border: 2px solid black;
+
   flex-basis: 50%;
 }
 
@@ -683,12 +742,12 @@ input {
 }
 
 .faq-entries h3 {
-  border: 2px solid black;
+
   width: 45%;
 }
 
 .faq-entries p {
-  border: 2px solid black;
+
   width: 45%;
 }
 
@@ -730,7 +789,6 @@ input {
   footer {
     width: 100%;
     display: flex;
-    margin: 92px 0;
     text-align: center;
   }
 
@@ -751,12 +809,11 @@ input {
   }
 
   address {
-    border: 2px solid black;
     flex-basis: 50%;
   }
 
   .social {
-    border: 2px solid black;
+
     flex-basis: 50%;
   }
 
@@ -803,14 +860,12 @@ input {
 
 
   .form-description {
-    border: 2px solid black;
     flex-basis: 30%;
   }
 
   /* Form */
 
   .form {
-    border: 2px solid black;
     flex-basis: 30%;
   }
 
@@ -850,7 +905,7 @@ input {
   }
 
   .features article {
-    border: 2px solid black;
+
     flex-basis: 30%;
     display: flex;
   }
@@ -875,16 +930,16 @@ input {
 
   .reviews article {
     display: flex;
-    border: 2px solid black;
+
   }
 
   .reviews .image {
-    border: 2px solid black;
+
     flex-basis: 50%;
   }
 
   .reviews .article-content {
-    border: 2px solid black;
+
     flex-basis: 50%;
 
   }
@@ -906,12 +961,12 @@ input {
   }
 
   .mission-header {
-    border: 2px solid black;
+
     width: inherit;
   }
 
   .mission p {
-    border: 2px solid black;
+
   }
 
   /*contact section for tablet*/
@@ -925,7 +980,7 @@ input {
   }
 
   .contact-content {
-    border: 2px solid black;
+
     display: flex;
     align-content: center;
     justify-content: center;
@@ -933,7 +988,7 @@ input {
 
   .address,
   .facilitator-details {
-    border: 2px solid black;
+
     flex-basis: 50%;
   }
 
@@ -952,12 +1007,12 @@ input {
   }
 
   .faq-entries h3 {
-    border: 2px solid black;
+
     width: 45%;
   }
 
   .faq-entries p {
-    border: 2px solid black;
+
     width: 45%;
   }
 
@@ -1003,7 +1058,7 @@ input {
   }
   pre,
   blockquote {
-    border: 1px solid #999;
+    1px solid #999;
     page-break-inside: avoid;
   }
   /*
