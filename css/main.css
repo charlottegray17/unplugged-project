@@ -173,10 +173,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -203,6 +204,14 @@ footer {
 .content-wrapping {
 }
 
+.hero-area {
+  background: url('../img/hero-image.jpg') #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
+}
+
   /* ---------- Base Header - Footer Styles----------------*/
 
 
@@ -215,15 +224,8 @@ footer {
 }
 
 .content-wrapper {
-  width: 80%;
-}
-
-header {
-  padding: 15px 0;
-}
-
-header h1 {
-  padding: 50px 0;
+  width: 100%;
+  padding: 25px 0px 10px 0px;
 }
 
 header .content-wrapper {
@@ -236,21 +238,20 @@ header .content-wrapper {
 
 .header-divider {
   width: 100%;
+  border-top: 2px #3a3a3a solid;
 }
 
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
   flex-flow: row wrap;
-  width: 60%;
-  padding-top: 15px;
+  width: 100%;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  width: 60%;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
 footer {
@@ -283,10 +284,28 @@ footer p {
 
 /* Hero Area */
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
+}
+
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area .content-wrapper {
+  width: 70%;
+}
+
+.hero-area h1 {
+  font-size: 4.5em;
+  font-weight: 400;
 }
 
 /* Form Descriptor */
@@ -683,6 +702,11 @@ input {
   width: 80%;
 }
 
+ figure {
+  width: 50%;
+  padding-right: 40px;
+}
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -750,9 +774,6 @@ input {
 
   width: 45%;
 }
-
-
-
 
 }
 
@@ -947,6 +968,12 @@ input {
   .reviews h3 {
     width: 80%;
   }
+
+  .reviews figure {
+    width: 50%;
+    padding-right: 40px;
+  }
+
 
   /* ==========================================================================
      About Page
