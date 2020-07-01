@@ -224,7 +224,7 @@ footer {
 }
 
 .content-wrapper {
-  width: 100%;
+  width: 90%;
   padding: 25px 0px 10px 0px;
 }
 
@@ -348,11 +348,21 @@ aside p {
   flex-flow: row wrap;
   padding: 47px 0;
   width: 100%;
+  background: url('../img/camping-team.jpg') #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1445px;
+}
+
+.features .content-wrapper {
+  width: 90%;
 }
 
 .features article {
   display: flex;
-  align-content: center;
+  flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
 
 }
@@ -365,7 +375,7 @@ aside p {
 }
 
 .features .features-item-description {
-  padding: 38px 45px;
+  padding: 0px 45px 38px 45px;
   display: flex;
   flex-basis: 45%;
   align-items: center;
@@ -373,6 +383,13 @@ aside p {
 
 .features p {
   margin: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -382,7 +399,7 @@ aside p {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  padding: 50px 0;
+  padding-bottom: 20px; 
   margin: 0;
 }
 
@@ -1000,7 +1017,6 @@ input {
     width: 75%;
   }
 
-
   .features,
   .features .content-wrapper {
     display: flex;
@@ -1026,8 +1042,13 @@ input {
 
   .features p {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     text-align: center;
+  }
+
+  .feature-items i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
   }
 
   /* Reviews */
@@ -1092,7 +1113,7 @@ input {
   /*map*/
 
   .map figure {
-    padding-bottom: 37%;
+    padding-bottom: 3%;
   }
 
   /*contact section for tablet*/
