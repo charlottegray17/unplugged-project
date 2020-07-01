@@ -399,7 +399,7 @@ aside p {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -445,12 +445,27 @@ footer .content-wrapper {
   justify-content: center;
 }
 
-footer .contact {
+footer .social, .contact {
   text-align: center;
 }
 
-footer .social {
-  text-align: center;
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icons p i{
+  font-size: 1.3em;
 }
 
 .map figure {
