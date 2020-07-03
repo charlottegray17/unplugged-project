@@ -258,18 +258,6 @@ footer {
   width: 100%;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -279,6 +267,28 @@ footer p {
   margin: 0;
 }
 
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icons p i{
+  font-size: 1.3em;
+}
+
+footer .copyright {
+  text-align: center;
+}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -447,25 +457,6 @@ footer .content-wrapper {
 
 footer .social, .contact {
   text-align: center;
-}
-
-footer .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-footer .social-icons p {
-  background-color: #527158;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer .social-icons p i{
-  font-size: 1.3em;
 }
 
 .map figure {
@@ -759,6 +750,10 @@ input {
 
 /* Features */
 
+.features {
+  height: 850px;
+}
+
 .features, .features .content-wrapper {
   width: 100%;
 }
@@ -772,21 +767,16 @@ input {
   justify-content: center;
 }
 
-.feature-items {
+.features-items article {
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
+  flex-wrap: column wrap;
+  flex-basis: 50%;
 }
 
-.features article {
-
-  flex-basis: 45%;
-  display: flex;
-  text-align: center;
-}
-
-.features p {
-  margin: 0;
+.features .features-item-description {
+  width: 62%;
 }
 
 /* Reviews */
@@ -835,12 +825,10 @@ input {
 }
 
 .mission-content {
-  display: flex;
 }
 
 .mission-header {
 
-  width: inherit;
 }
 
 .mission p {
@@ -850,6 +838,7 @@ input {
 /*map*/
 
 .map figure {
+  width: inherit;
   padding-bottom: 45%;
 }
 
@@ -876,6 +865,10 @@ input {
   flex-basis: 50%;
 }
 
+footer .contact p {
+  margin: 0;
+}
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -883,21 +876,45 @@ input {
 .faq {
   width: 100%;
   display: flex;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
-  display: flex;
   justify-content: space-between;
+  width: 80%;
+}
+
+.faq-entries {
+  display: flex;
+  flex-flow: column wrap;
+  height: 400px;
 }
 
 .faq-entries h3 {
-
-  width: 45%;
+  display: flex;
+  width: 50%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .faq-entries p {
+  display: flex;
+  width: 50%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+}
 
-  width: 45%;
+
+.faq-entries h3 {
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+.faq-entries p {
+  font-size: 1em;
+  padding-bottom: 40px;
 }
 
 }
