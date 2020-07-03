@@ -327,7 +327,7 @@ aside h3 {
 }
 
 aside .form {
-  margin: 0;
+  margin: 40px 0px 20px 0px;
 }
 
 /* Aside */
@@ -374,21 +374,10 @@ aside p {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .features .features-item-description {
   padding: 0px 45px 38px 45px;
-  display: flex;
-  flex-basis: 45%;
-  align-items: center;
 }
 
 .features p {
@@ -482,10 +471,15 @@ footer .social, .contact {
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-igitems: center;
   flex-flow: row wrap;
-  width: 90%;
-  padding: 42px 0;
+  width: 100%;
+  padding: 0px 0px 42px 0px;
+  background-color: #527158;
+}
+
+.faq h3 {
+  font-size: 1.25em;
 }
 
 .faq .content-wrapper {
@@ -645,12 +639,14 @@ address {
 }
 
 .social {
-
   flex-basis: 50%;
 }
 
 footer .social-icons {
   display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-self: center;
   justify-content: space-around;
   align-items: center;
 }
@@ -726,6 +722,10 @@ aside .content-wrapper {
   justify-content: center;
 }
 
+aside .form {
+  margin: 0 0 0 15px;
+}
+
 /* Form Descriptor */
 
 
@@ -752,32 +752,42 @@ input {
 
 .features {
   height: 850px;
-}
-
-.features, .features .content-wrapper {
   width: 100%;
 }
 
 .features .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
   width: 75%;
 }
 
-.features h2 {
+.feature-items {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
 }
 
-.features-items article {
+.feature-items article {
   display: flex;
   align-items: center;
+  width: 50%;
   justify-content: center;
-  flex-wrap: column wrap;
-  flex-basis: 50%;
 }
 
-.features .features-item-description {
-  width: 62%;
+.features-item-description {
+  font-size: 0.735em;
+  width: 300px;
+  padding: 0px;
 }
+
+.features i {
+  margin-bottom: 20px;
+}
+
+
+
 
 /* Reviews */
 
@@ -793,6 +803,10 @@ input {
 
 .reviews article {
   display: flex;
+}
+
+.reviews h3 {
+  margin-top: 0;
 
 }
 
@@ -888,6 +902,7 @@ footer .contact p {
   display: flex;
   flex-flow: column wrap;
   height: 400px;
+  overflow: hidden;
 }
 
 .faq-entries h3 {
@@ -915,6 +930,8 @@ footer .contact p {
 .faq-entries p {
   font-size: 1em;
   padding-bottom: 40px;
+  padding-right: 20px;
+
 }
 
 }
@@ -1043,6 +1060,7 @@ footer .contact p {
   .features {
     width: 100%;
     display: flex;
+    height: 600px;
   }
 
   .features .content-wrapper {
@@ -1054,7 +1072,7 @@ footer .contact p {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    justify-content:center;
+    justify-content: center;
   }
 
   .features h2 {
@@ -1070,12 +1088,16 @@ footer .contact p {
 
     flex-basis: 30%;
     display: flex;
+    align-content: center;
+    justify-content: center;
   }
 
   .features p {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    align-content: center;
+    justify-content: center;
   }
 
   .feature-items i {
@@ -1127,25 +1149,32 @@ footer .contact p {
 
   .mission {
     width: 100%;
+    padding: 0px;
+  }
+
+  .mission .content-wrapper {
+    width: 90%;
+    padding: 100px 0px 100px 0px;
   }
 
   .mission-content {
     display: flex;
+    width: 100%;
   }
 
-  .mission-header {
+  .mission-content p {
+    padding-right: 55px;
+    text-align: justify;
+   }
 
-    width: inherit;
+  .mission h1 {
+    text-align: justify;
+    margin: 15px 0px 15px 0px;
   }
-
-  .mission p {
-
-  }
-
   /*map*/
 
   .map figure {
-    padding-bottom: 3%;
+    padding-bottom: 37%;
   }
 
   /*contact section for tablet*/
@@ -1156,10 +1185,18 @@ footer .contact p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 0px;
+  }
+
+  .contact-section .content-wrapper {
+    padding: 100px 0px 100px 0px;
+  }
+
+  .contact-section h1 {
+    margin: 15px 0px 15px 0px;
   }
 
   .contact-content {
-
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1185,15 +1222,22 @@ footer .contact p {
     justify-content: space-between;
   }
 
-  .faq-entries h3 {
+  .faq-entries {
+  }
 
+  .faq-entries h3 {
     width: 45%;
+    font-size: 1.1em;
   }
 
   .faq-entries p {
-
     width: 45%;
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 20px;
   }
+
 
 }
 
